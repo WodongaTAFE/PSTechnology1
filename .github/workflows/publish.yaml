@@ -36,15 +36,14 @@ jobs:
           git push
 
       - name: Create GitHub release
-        if: github.ref == 'refs/heads/master'
-        uses: softprops/action-gh-release@v1
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: v${{ env.module_new_version }}
           prerelease: true
 
       - name: Publish
-        if: false
-        # if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         shell: pwsh
         run: |
           Publish-Module -Path "${{ github.workspace }}/${{ env.module_name }}" -NuGetApiKey ${{ secrets.PSGALLERY_API_KEY }} -Verbose
