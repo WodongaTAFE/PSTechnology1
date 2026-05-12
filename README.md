@@ -49,11 +49,3 @@ To ensure the Technology1 token is not preserved in your session, you can discon
     Disconnect-T1
 
 Note that no network connections are maintained that need to be cleaned up with this command. It's only used to clear the locally cached URI and token.
-
-## Cmdlets
-
-Once you're connected, you have a bunch of commands you can use to query and/or update the connected Technology1 instance:
-
-* Invoke-T1Request
-
-All the commands that update data support a -WhatIf parameter, so you can practise without making any changes, and they're pretty well documented so adding a -? switch to any of them will give you some help.
