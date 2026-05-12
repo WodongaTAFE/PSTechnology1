@@ -16,7 +16,7 @@ The first thing you'll need to do is connect to a Technology1 instance. We do th
 To have PowerShell ask for a service account's username and password and then connect with those credentials:
 
     $cred = Get-Credential
-    Connect-T1 -Instance 'MYCOMPANY' -Credential $cred
+    Connect-T1 -Instance 'EXAMPLE' -Credential $cred
 
 When you specify an instance name, the module will use it to construct a base URI like this:
 
@@ -30,7 +30,7 @@ If you've set up an OAuth IdP client (Confidential Client Type) then you can con
 
 ## Call a web service
 
-To call a web service you've defined in your Technology1 instance, use the `Invoke-T1Request` function. For example, if you have a "reports as a service" web server called "Employees", you would use this command:
+To call a web service you've defined in your Technology1 instance, use the `Invoke-T1Request` function. For example, if you have a "reports as a service" web service called "Employees", you would use this command:
 
     Invoke-T1Request -Name Employees
 
