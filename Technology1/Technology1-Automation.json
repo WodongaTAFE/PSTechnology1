@@ -1,0 +1,24 @@
+{
+   "ConnectionFields": [
+   {
+      "IsEncrypted":  false,
+      "IsOptional":  false,
+      "Name":  "Instance",
+      "TypeName":  "System.String"
+   },
+   {
+      "IsEncrypted":  false,
+      "IsOptional":  false,
+      "Name":  "Client ID",
+      "TypeName":  "System.String"
+   },
+   {
+      "IsEncrypted":  true,
+      "IsOptional":  false,
+      "Name":  "Client Secret",
+      "TypeName":  "System.String"
+   }
+   ],
+   "ConnectionTypeName":  "Technology1",
+   "IntegrationModuleName":  "Technology1"
+}
