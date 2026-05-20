@@ -101,7 +101,7 @@ function Invoke-T1Request {
             Set-Variable -Name $MessagesVariable -Value $result.Messages -Scope Global
         }
 
-        if ($result.DataSet) {
+        if ($result | Get-Member DataSet) {
             return $result.DataSet
         }
 
