@@ -9,13 +9,13 @@
    {
       "IsEncrypted":  false,
       "IsOptional":  false,
-      "Name":  "Client ID",
+      "Name":  "ClientId",
       "TypeName":  "System.String"
    },
    {
       "IsEncrypted":  true,
       "IsOptional":  false,
-      "Name":  "Client Secret",
+      "Name":  "ClientSecret",
       "TypeName":  "System.String"
    }
    ],
